@@ -1,0 +1,113 @@
+body {
+  font-family: "Hiragino Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #3bbe13;
+  border-bottom: 4px solid #e0c46c;
+}
+
+.subtitle {
+  margin-top: -10px;
+  color: #555;
+}
+
+.card {
+  background: #fff;
+  width: 80%;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.fukidashi {
+  background: #fff;
+  padding: 10px 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffb347;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #ff9a22;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #777;
+}
+
+/* -------------------------
+   レスポンシブ対応
+-------------------------- */
+@media (max-width: 600px) {
+
+  header {
+    padding: 30px 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .fukidashi {
+    margin-top: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
